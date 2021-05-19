@@ -5,11 +5,6 @@ import food.Food;
 public class Duck extends Herbivore implements Fly, Swim, Voice, Run {
 
     @Override
-    public String toString() {
-        return "Duck";
-    }
-
-    @Override
     public void run() {
         System.out.println("Duck is running");
     }

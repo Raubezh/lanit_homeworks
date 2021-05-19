@@ -39,13 +39,12 @@ public class Zoo {
         worker.feed(camel, hay);
         camel.getFullness();
 
-        worker.getVoice(camel);
+        worker.getVoice((Voice) camel);
     //    worker.getVoice(fish); //Ошибка компиляции
 
-        Animal[] lake = {duck, fish};
-        for (Animal animal: lake){
-            Swim swimer = (Swim) animal;
-            swimer.swim();
+        Swim[] lake = {(Swim) duck, (Swim) fish};
+        for (Swim animal: lake){
+            animal.swim();
         }
 
 

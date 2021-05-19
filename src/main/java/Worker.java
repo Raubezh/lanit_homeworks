@@ -7,9 +7,7 @@ public class Worker {
         animal.eat(food);
         System.out.println("The worker feed " + animal + "\n");
     }
-    public void getVoice (Animal animal) {
-
-        Voice voice = (Voice) animal;
-        System.out.println(voice.voice());
+    public void getVoice (Voice animal) {
+        System.out.println(animal.voice());
     }
 }

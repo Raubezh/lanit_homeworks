@@ -11,5 +11,8 @@ public abstract class Animal {
         System.out.println("Fullness: " + full +"\n");
     }
 
-
+        @Override
+    public String toString() {
+        return getClass().getSimpleName();
+    }
 }

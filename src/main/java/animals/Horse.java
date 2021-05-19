@@ -5,10 +5,6 @@ import food.Food;
 public class Horse extends Herbivore implements Voice, Run {
 
     @Override
-    public String toString(){
-        return "Horse";
-    }
-    @Override
     public void run(){
         System.out.println("Horse is running");
     }
